@@ -1,0 +1,45 @@
+﻿@{
+        ViewBag.Title = "Login";
+    }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../../CSS/StyleSheet1.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <h1>BPOS</h1>
+            </div>
+
+            <form id="login-form" action="/User/Login" method="post" >
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="PasswordHash" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                    <button type="button" onclick="navigateToSignUp()">Sign Up</button>
+
+                </div>
+                <div class="form-group social-icons">
+                    <p>Or log in with:</p>
+                    <a href="#"><img src="../../img/1 (4).png" alt="Gmail"></a>
+                    <a href="#"><img src="../../img/1 (3).png" alt="Facebook"></a>
+                    <a href="#"><img src="../../img/1 (1).png" alt="Twitter"></a>
+                </div>
+
+            </form>
+
+        </div>
+        <script src="../../Scripts/JavaScript.js"></script>
+
+    </body>
+    </html>

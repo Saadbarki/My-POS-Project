@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a72d880b20fe45f4aafe0acf88286d96" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="POSModel.Category" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="POSModel.Customer" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="POSModel.Product" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="POSModel.Purchase" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="POSModel.Return" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="POSModel.Role" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="POSModel.Sale" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="POSModel.Supplier" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="POSModel.UserRole" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="POSModel.User" Width="1.5" PointX="0.75" PointY="7" />
+        <AssociationConnector Association="POSModel.FK_UserRole_Role" />
+        <AssociationConnector Association="POSModel.FK_UserRole_UserRole" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

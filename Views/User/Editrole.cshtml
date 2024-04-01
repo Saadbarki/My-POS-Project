@@ -1,0 +1,40 @@
+﻿@model POS.Models.Role
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit Role</title>
+    <link rel="stylesheet" href="../../CSS/StyleSheet1.css">
+    <!-- Add any other CSS files or stylesheets here -->
+</head>
+<body>
+    <div>
+        <h1>Edit Role</h1>
+        <form method="post" action="@Url.Action("Edit", "Role")">
+            @Html.AntiForgeryToken()
+            <div>
+                <input type="hidden" name="RoleId" value="@Model.RoleId" />
+                <div>
+                    <label for="RoleName">Role Name:</label>
+                    <input type="text" id="RoleName" name="RoleName" value="@Model.RoleName" />
+                </div>
+                <div>
+                    <label for="RoleDesc">Role Description:</label>
+                    <input type="text" id="RoleDesc" name="RoleDesc" value="@Model.RoleDesc" />
+                </div>
+                <div>
+                    <label for="CreatedDate">Created Date:</label>
+                    <input type="text" id="CreatedDate" name="CreatedDate"/>
+                    <!-- Display CreatedDate in a read-only input field -->
+                </div>
+                <!-- Add input fields for other role details as needed -->
+            </div>
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </form>
+    </div>
+    <script src="../../Scripts/JavaScript.js"></script>
+</body>
+</html>

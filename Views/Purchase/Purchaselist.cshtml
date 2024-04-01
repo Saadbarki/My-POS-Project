@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>POS Dash | Purchase List</title>
+    <!-- Add your CSS links here -->
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header and other layout elements if needed -->
+
+        <div class="content-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
+                            <div>
+                                <h4 class="mb-3">Purchase List</h4>
+                                <p class="mb-0">
+                                    A purchase dashboard enables purchasing managers to efficiently track, evaluate, and optimize all acquisition processes within a company.
+                                </p>
+                            </div>
+                            <a href="/Purchase/Purchaselist" class="btn btn-primary add-list"><i class="las la-plus mr-3"></i>Add Purchase</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="table-responsive rounded mb-3">
+                            <table class="data-table table mb-0 tbl-server-info" id="productTable">
+                                <thead class="bg-white text-uppercase">
+                                    <tr class="ligth ligth-data">
+                                        <th>Date</th>
+                                        <th>Reference No</th>
+                                        <th>Supplier</th>
+                                        <th>Purchase Status</th>
+                                        <th>Total</th>
+                                        <th>Paid</th>
+                                        <th>Balance</th>
+                                        <th>Payment Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="iq-footer">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item"><a href="../backend/privacy-policy.html">Privacy Policy</a></li>
+                                    <li class="list-inline-item"><a href="../backend/terms-of-service.html">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <span class="mr-1">
+                                    <script>document.write(new Date().getFullYear())</script>©
+                                </span> <a href="#" class="">POS Dash</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add your JavaScript file link here -->
+    <script src="../../Theme/assets/js/POS_Javascript/Purchaselist.js"></script>
+</body>
+</html>

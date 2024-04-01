@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Role List</title>
+    <link rel="stylesheet" href="../../css/stylesheet1.css">
+</head>
+<body>
+    <div>
+        <h1>Role List</h1>
+        <table class="role-table">
+            <thead>
+                <tr>
+                    <th>Role ID</th>
+                    <th>Role Name</th>
+                    <th>Role Description</th>
+                    <th>Created Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var role in Model)
+                {
+                    <tr data-role-id="@role.RoleId">
+                        <td>@role.RoleId</td>
+                        <td>@role.RoleName</td>
+                        <td>@role.RoleDesc</td>
+                        <td>@role.CreatedDate</td>
+                        <td>
+                            <a href="@Url.Action("EditRole", "User", new { id = role.RoleId })">Edit</a> |
+                            <a href="#" onclick="deleteRole('@role.RoleId')">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <script src="../../Scripts/JavaScript.js"></script>
+</body>
+</html>

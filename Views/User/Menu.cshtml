@@ -1,0 +1,38 @@
+﻿@{
+        ViewBag.Title = "Menu";
+    }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../../CSS/StyleSheet1.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">User</a>
+                <ul class="submenu">
+                   
+                    <li>@Html.ActionLink("User List", "UserList", "User")</li>
+                    <li>@Html.ActionLink("AddNewUser", "AddNewUser", "User")</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Role</a>
+                <ul class="submenu">
+                    @*<li><a href="#">Role List</a></li>*@
+                    <li>@Html.ActionLink("Rolelist", "Rolelist", "User")</li>
+                    @*<li><a href="#">Add New Role</a></li>*@
+                    <li>@Html.ActionLink("Addnewrole", "Addnewrole", "User")</li>
+                </ul>
+            </li> <
+    </div>
+
+    <script src="../../Scripts/JavaScript.js"></script>
+</body>
+</html>

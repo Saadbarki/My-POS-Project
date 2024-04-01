@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Add New Role";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Role</title>
+    <link rel="stylesheet" href="../../CSS/StyleSheet1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Role</h2>
+    <form id="add-role-form" action="/User/AddNewRole" method="post">
+
+
+
+
+        <div class="form-group">
+            <label for="role-id">Role ID:</label>
+            <input type="text" id="role-id" name="RoleId" required>
+        </div>
+        <div class="form-group">
+            <label for="role-name">Role Name:</label>
+            <input type="text" id="role-name" name="RoleName" required>
+        </div>
+        <div class="form-group">
+            <label for="role-description">Role Description:</label>
+            <input type="text" id="role-description" name="RoleDesc" required>
+        </div>
+        <div class="form-group">
+            <label for="created-date">Created Date:</label>
+            <input type="date" id="created-date" name="CreatedDate" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Add Role</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

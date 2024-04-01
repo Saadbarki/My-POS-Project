@@ -1,0 +1,93 @@
+﻿@model POS.Models.User
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit User</title>
+    <link rel="stylesheet" href="../../CSS/StyleSheet1.css">-->
+<!-- Add any other CSS files or stylesheets here -->
+<!--</head>
+<body>
+    <div>
+        <h1>Edit User</h1>
+        <form method="post" action="@Url.Action("Edit", "User")">
+            @Html.AntiForgeryToken()
+            <div>
+                <input type="hidden" name="UserID" value="@Model.UserID" />
+                <div>
+                    <label for="UserName">Username:</label>
+                    <input type="text" id="UserName" name="UserName" value="@Model.UserName" />
+                </div>
+                <div>
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" id="FirstName" name="FirstName" value="@Model.FirstName" />
+                </div>-->
+<!-- Other user fields -->
+<!--</div>
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </form>
+    </div>
+    <script src="../../Scripts/JavaScript.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit User</title>
+    <link rel="stylesheet" href="../../CSS/StyleSheet1.css">
+    <!-- Add any other CSS files or stylesheets here -->
+</head>
+<body>
+    <div>
+        <h1>Edit User</h1>
+        <form method="post" action="@Url.Action("Edit", "User")">
+            @Html.AntiForgeryToken()
+            <div>
+                <input type="hidden" name="UserID" value="@Model.UserID" />
+                <div>
+                    <label for="UserName">Username:</label>
+                    <input type="text" id="UserName" name="UserName" value="@Model.UserName" />
+                </div>
+                <div>
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" id="FirstName" name="FirstName" value="@Model.FirstName" />
+                </div>
+                <div>
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" id="LastName" name="LastName" value="@Model.LastName" />
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email" value="@Model.Email" />
+                </div>
+                <div>
+                    <label for="PasswordHash">Password Hash:</label>
+                    <input type="text" id="PasswordHash" name="PasswordHash" value="@Model.PasswordHash" />
+                </div>
+                <div>
+                    <label for="PhoneNumber">Phone Number:</label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber" />
+                </div>
+                <div>
+                    <label for="Address">Address:</label>
+                    <input type="text" id="Address" name="Address" value="@Model.Address" />
+                </div>
+                <div>
+                    <label for="City">City:</label>
+                    <input type="text" id="City" name="City" value="@Model.City" />
+                </div>
+                <!-- Add input fields for other user details as needed -->
+            </div>
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </form>
+    </div>
+    <script src="../../Scripts/JavaScript.js"></script>
+</body>
+</html>
